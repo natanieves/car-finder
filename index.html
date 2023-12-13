@@ -17,9 +17,9 @@
       <section class="container">
         <form class="column">
           <section class="four-columns">
-            <section class="row" id="da">
+            <section class="row">
               <label>Marca</label>
-              <select class="filter-selector">
+              <select class="filter-selector" id="brand">
                 <option value="">Seleccione</option>
                 <option value="Audi">Audi</option>
                 <option value="BMW">BMW</option>
@@ -31,13 +31,13 @@
             </section>
             <section class="row">
               <label>Año</label>
-              <select class="filter-selector">
+              <select class="filter-selector" id="year">
                 <option value="">Seleccione</option>
               </select>
             </section>
             <section class="row">
               <label>Precio Min</label>
-              <select class="filter-selector">
+              <select class="filter-selector" id="min-price">
                 <option value="">Seleccione</option>
                 <option value="20000">20,000</option>
                 <option value="30000">30,000</option>
@@ -51,7 +51,7 @@
             </section>
             <section class="row">
               <label>Precio Max</label>
-              <select class="filter-selector">
+              <select class="filter-selector" id="max-price">
                 <option value="">Seleccione</option>
                 <option value="20000">20,000</option>
                 <option value="30000">30,000</option>
@@ -67,7 +67,7 @@
           <section class="three-columns">
             <section class="row">
               <label>Puertas</label>
-              <select class="filter-selector">
+              <select class="filter-selector" id="doors">
                 <option value="">Seleccione</option>
                 <option value="2">2</option>
                 <option value="4">4</option>
@@ -75,7 +75,7 @@
             </section>
             <section class="row">
               <label>Transmisión</label>
-              <select class="filter-selector">
+              <select class="filter-selector" id="transmission">
                 <option value="">Seleccione</option>
                 <option value="automatico">Automática</option>
                 <option value="manual">Manual</option>
@@ -83,7 +83,7 @@
             </section>
             <section class="row">
               <label>Color</label>
-              <select class="filter-selector">
+              <select class="filter-selector" id="color">
                 <option value="">Seleccione</option>
                 <option value="Negro">Negro</option>
                 <option value="Azul">Azul</option>
@@ -95,8 +95,13 @@
         </form>
 
         <h1>Resultado</h1>
+        <section id="result"></section>
       </section>
     </main>
+
+    <script src="/js/bd.js"></script>
+    <script src="/js/app.js"></script>
+
   </body>
 
   <footer>Made by Nata with ❤</footer>
