@@ -57,7 +57,26 @@ footer {
     font-size: 2rem;
 }
 
-/* Larger than phablet (also point when grid becomes active) */
+#result p {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.alert {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.error {
+    background-color: red;
+}
+
 @media (min-width: 550px) {
     .four-columns {
         display: flex;
@@ -78,7 +97,7 @@ footer {
     }
 }
 
-/* Larger than Desktop HD */
+
 @media (min-width: 1200px) {
     .container {
         max-width: 75rem;
